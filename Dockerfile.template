@@ -3,4 +3,6 @@ FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
 WORKDIR /usr/src/app
 ENV INITSYSTEM on
 
+COPY start.sh ./
+
 CMD ["bash", "start.sh"]
