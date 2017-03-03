@@ -1,0 +1,6 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
+
+WORKDIR /usr/src/app
+ENV INITSYSTEM on
+
+CMD ["bash", "start.sh"]
